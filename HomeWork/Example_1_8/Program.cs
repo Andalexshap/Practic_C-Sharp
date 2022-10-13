@@ -24,7 +24,7 @@ else
     while(count <= value)
     {
         if(count == value) Console.Write(count);
-        Console.Write($"{count}, ");
+        else Console.Write($"{count}, ");
         count +=2;
     }
 }
