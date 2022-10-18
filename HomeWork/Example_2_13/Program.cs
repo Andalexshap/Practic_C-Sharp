@@ -7,7 +7,7 @@
 Console.WriteLine("Определение третьей цифры в числе");
 Console.Write("Введите любое число: ");
 
-string value = Console.ReadLine();
+string value = Console.ReadLine() ?? "0";
 
 if (value.Length < 3)
 {

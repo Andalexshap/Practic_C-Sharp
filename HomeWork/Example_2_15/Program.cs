@@ -9,7 +9,7 @@ Console.WriteLine("Введите цифру от 1 - 7, соответсвую�
 string[] dayOfWeek = {"понедельник","вторник","среда","четверг","пятница","суббота","воскресенье"};
 
 int number = 1;
-string value = Console.ReadLine();
+string value = Console.ReadLine() ?? "0";
 bool result = int.TryParse(value, out number);
 
 
