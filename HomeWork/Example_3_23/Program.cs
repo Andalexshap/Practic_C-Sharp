@@ -32,6 +32,7 @@ while (true)
         if (i == value) Console.Write(Math.Pow(i, 3));
         else Console.Write(Math.Pow(i, 3) + ", ");
     }
+    value.ToString()
     break;
 }
 

@@ -8,8 +8,11 @@ Console.WriteLine("Проверка числа на полиндром");
 while (true)
 {
     Console.WriteLine("Введите любое число: ");
-    string str = Console.ReadLine() ?? "0";
+
     int number;
+
+    string str = Console.ReadLine();
+    str = !string.IsNullOrEmpty(str) ? str : "0";
 
     var result = int.TryParse(str, out number);
 
