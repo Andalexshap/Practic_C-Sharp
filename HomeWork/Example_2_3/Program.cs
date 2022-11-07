@@ -3,7 +3,7 @@ Console.WriteLine("Отображение возможных координат 
 
 Console.Write("Введите номер четверти от1 до 4х: ");
 
-string str = Console.ReadLine();
+string str = Console.ReadLine()!;
 
 if(str == "1") Console.WriteLine("Возможные координаты X = (0 : + infinity) ,Y = (0 : + infinity)");
 else if(str == "2") Console.WriteLine("Возможные координаты X = (- infinity : 0) ,Y = (0 : + infinity)"); 

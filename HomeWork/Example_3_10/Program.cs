@@ -10,7 +10,7 @@ while (true)
     Console.Write("Введите трехзначное число: ");
 
     int number;
-    string str = Console.ReadLine();
+    string str = Console.ReadLine()!;
     str = string.IsNullOrEmpty(str) ? "100" : str;
 
     if (str.Length != 3)

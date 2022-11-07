@@ -11,7 +11,7 @@ while (true)
 
     int number;
 
-    string str = Console.ReadLine();
+    string str = Console.ReadLine()!;
     str = !string.IsNullOrEmpty(str) ? str : "0";
 
     var result = int.TryParse(str, out number);

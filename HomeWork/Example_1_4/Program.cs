@@ -33,4 +33,4 @@ int max = firstValue;
 if (max < secondValue) max = secondValue;
 if (max <thirdValue) max = thirdValue;
 
-Console.WriteLine($"максимальное из трех чисел: {max}");
+Console.WriteLine($"Максимальное из трех чисел: {max}");

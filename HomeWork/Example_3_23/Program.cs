@@ -7,10 +7,8 @@ while (true)
     Message();
 
     int value;
-
-    string? str = Console.ReadLine();
-
-    if (string.IsNullOrEmpty(str)) str = "2";
+    string str = Console.ReadLine()!;
+    str = string.IsNullOrEmpty(str) ? "2" : str;
     var result = int.TryParse(str, out value);
 
     if (!result)
@@ -32,7 +30,7 @@ while (true)
         if (i == value) Console.Write(Math.Pow(i, 3));
         else Console.Write(Math.Pow(i, 3) + ", ");
     }
-    value.ToString()
+    value.ToString();
     break;
 }
 
