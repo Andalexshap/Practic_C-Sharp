@@ -10,7 +10,7 @@ Console.WriteLine("Программа выведет двумерный масс
 Console.WriteLine("Вам необходимо задать колличество строк(m) и строк (m)");
 
 int rows = InputNumber("Введите колличество строк(m): ");
-int column = InputNumber("Введите колличество строк(n): ");
+int column = InputNumber("Введите колличество столбцов(n): ");
 
 double[,] matrix = CreateMatrixRndDouble(rows, column);
 PrintMatrix(matrix);
@@ -56,16 +56,16 @@ double[,] CreateMatrixRndDouble(int rows, int column)
 
 void PrintMatrix(double[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++)
+for (int i = 0; i < matrix.GetLength(0); i++)
+{
+    Console.Write("|");
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            if (matrix[i, j] > 0) Console.Write($" {matrix[i, j]} ");
-            else if (matrix[i, j] == 0) Console.Write($" {matrix[i, j]}   ");
-            else Console.Write($"{matrix[i, j]} ");
-        }
-        Console.WriteLine();
+        if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i,j], 5} |");
+        else Console.Write($"{matrix[i,j], 5}");
     }
+    Console.WriteLine(" |");
+}
 }
 
 #endregion
